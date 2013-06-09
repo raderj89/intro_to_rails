@@ -11,7 +11,7 @@ For a lot of people this can be an especially difficult process. And that's why 
 
 First things first, some background:
 
-I'm a newly-learned (pronounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the onboarding process as easy and pain free as possible for those following behind us. 
+I'm a newly-learned (pronounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the on boarding process as easy and pain free as possible for those following behind us. 
 
 Note: You will see many references to how things were done in Sinatra. If you're not a Dev Bootcamp student and have never heard of or used Sinatra before, feel free to glaze over those parts.
 
@@ -23,7 +23,7 @@ Okay, enough with the talk. Onward!
 
 To get started with Rails, make sure you have it installed on your computer. You can type `which rails` or `gem list` to see if it is already installed. If not, just type `gem install rails` to download it.
 
-Once you have that, navigate to a new directory of your chosing.
+Once you have that, navigate to a new directory of your choosing.
 
 In Sinatra, you were probably given a skeleton app to use and you would have to oh-so-laboriously copy and paste it into the new directory. In Rails, simply type `rails new name_of_app_here` in the terminal to setup your skeleton automagically. For our purposes, let's add a `-T` flag at the end of that statement to tell Rails that we want to use rspec and not the default test unit platform (`-T` is short for `--skip-test-unit`). So it'll look like this:
 
