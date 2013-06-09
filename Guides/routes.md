@@ -49,33 +49,33 @@ Now that you've done that, you can proceed on to the controller section of this 
 If you are somehow still hungry for more information on this whole routes thing before you move on, I've copied the routes file from above and commented a few of the more interesting parts to whet your appetitite. This is purely extra credit, so feel free to move on now if you'd like.
 
 
-  BrahooAnswers::Application.routes.draw do
-    # Questions
-    ## automatically makes seven routes for us
-    resources :questions
+    BrahooAnswers::Application.routes.draw do
+      # Questions
+      ## automatically makes seven routes for us
+      resources :questions
 
-    # Answers
-    ## we can limit which routes are created using :only
-    resources :answers,  :only => [:create, :edit, :destroy]
+      # Answers
+      ## we can limit which routes are created using :only
+      resources :answers,  :only => [:create, :edit, :destroy]
 
-    # Comments
-    resources :comments, :only => [:create, :edit, :destroy]
+      # Comments
+      resources :comments, :only => [:create, :edit, :destroy]
 
-    # Users
-    resources :users
-    ## define a custom url and tell it where to go
-    ## in this case, the new method in the users controller
-    match '/signup' => 'users#new'
+      # Users
+      resources :users
+      ## define a custom url and tell it where to go
+      ## in this case, the new method in the users controller
+      match '/signup' => 'users#new'
 
-    # Sessions
-    ## :as gives us the ability to access this url in forms or links
-    ## by saying login_path or login_url as opposed to explicitly
-    ## typing out the url
-    get    '/login'  => 'sessions#new', :as => :login
-    post   '/login'  => 'sessions#create'
-    delete '/logout' => 'sessions#destroy', :via => :delete
+      # Sessions
+      ## :as gives us the ability to access this url in forms or links
+      ## by saying login_path or login_url as opposed to explicitly
+      ## typing out the url
+      get    '/login'  => 'sessions#new', :as => :login
+      post   '/login'  => 'sessions#create'
+      delete '/logout' => 'sessions#destroy', :via => :delete
 
-    # Root
-    ## specificies what gets called when you visit '/'
-    root :to => 'questions#index'
-  end
+      # Root
+      ## specificies what gets called when you visit '/'
+      root :to => 'questions#index'
+    end
