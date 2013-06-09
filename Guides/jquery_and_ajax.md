@@ -4,7 +4,7 @@ Rails has some built in helpers that do some fancy Ajax stuff for you. **DON'T U
 
 For all intents and purposes, Ajax and jQuery are the exact same in Rails as they were in Sinatra. You interact with the DOM the same way, you make post and get requests the same way, you animate the same, etc.
 
-Okay, so may not *exactly* the same. One nice thing about Rails is that you can use a nifty new trick in the controllers to route Ajax requests. Here's what that looks like:
+Okay, so maybe not *exactly* the same. One nice thing about Rails is that you can use a nifty new trick in the controllers to route Ajax requests. Here's what that looks like:
 
 	respond_to do |format|
       format.html { redirect_to :back }
