@@ -1,19 +1,19 @@
 #An Intro to Rails
--*By some newbies*
+-By some newbies
 
 ===
 
 If you're reading this file, you're most likely trying to learn Rails. That's great! You're about to have a whole lot of new power at your fingertips.
 
-Unfortunately, as with any new language or framework, there's a bit of a learning curve that goes along with Rails. You'll need to spend some time getting familiar with its intracacies, pecularities, and best practices. And yes, 'some time' is an understatement.
+Unfortunately, as with any new language or framework, there's a bit of a learning curve that goes along with Rails. You'll need to spend some time getting familiar with its intricacies, peculiarities, and best practices. And yes, 'some time' is an understatement.
 
 For a lot of people this can be an especially difficult process. And that's why I decided to put this guide together. 
 
 First things first, some background:
 
-I'm a newly-learned (prounounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the onboarding process as easy and pain free as possible for those following behind us. 
+I'm a newly-learned (pronounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the onboarding process as easy and pain free as possible for those following behind us. 
 
-Note: You will see many references to how things were done in Sinatra. If you're not a Dev Bootcamp sutdent and have never heard of or used Sinatra before, feel free to glaze over those parts.
+Note: You will see many references to how things were done in Sinatra. If you're not a Dev Bootcamp student and have never heard of or used Sinatra before, feel free to glaze over those parts.
 
 Okay, enough with the talk. Onward!
 
@@ -25,7 +25,7 @@ To get started with Rails, make sure you have it installed on your computer. You
 
 Once you have that, navigate to a new directory of your chosing.
 
-In Sinatra, you were probably given a skeleton app to use and you would have to oh-so-laborously copy and paste it into the new directory. In Rails, simply type `rails new name_of_app_here` in the terminal to setup your skeleton automagically. For our purposes, let's add a `-T` flag at the end of that statement to tell Rails that we want to use rspec and not the default test unit platform (`-T` is short for `--skip-test-unit`). So it'll look like this:
+In Sinatra, you were probably given a skeleton app to use and you would have to oh-so-laboriously copy and paste it into the new directory. In Rails, simply type `rails new name_of_app_here` in the terminal to setup your skeleton automagically. For our purposes, let's add a `-T` flag at the end of that statement to tell Rails that we want to use rspec and not the default test unit platform (`-T` is short for `--skip-test-unit`). So it'll look like this:
 
     $ rails new name_of_app_here -T
 
@@ -89,6 +89,6 @@ Okay, so now that you are at least vaguely familiar with the layout of a Rails a
 6. Automated Testing
 7. jQuery and Ajax
 
-Each of these topics are covered in a seperate markdown file. I'd recommend covering them in the order listed, but it's certainly not a requirement. By the end of this guide, you'll have a good sense of how a Rails app works and will be able to build a functioning app of your own.
+Each of these topics are covered in a separate markdown file. I'd recommend covering them in the order listed, but it's certainly not a requirement. By the end of this guide, you'll have a good sense of how a Rails app works and will be able to build a functioning app of your own.
 
 What are you waiting for? Go get started!
