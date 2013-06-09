@@ -63,7 +63,7 @@ Filters are methods to be run before, during or after other controller actions. 
 
 	class ApplicationController < ActionController::Base
 	  before_filter :require_login 
-	
+
 	  private
 
 	  def require_login
@@ -84,24 +84,6 @@ Obviously you don't necessarily want this to run before ALL actions, so you can 
 
 This will skip the `before_filter` for the `#new` and `#create` actions (obviosuly, you don't want to force your users to be logged in to create a new account).
 
-After filters do the same exact thing but *after* the controller action is called.
+After filters do the same exact thing but *after* the controller action is called. There are also around filters which, as their name imply, run both before and after the controller action is called. However, don't worry too much about learning these other filter types (or even the begin filter type, for that matter) until you're more comfortable with the basic operation of a Rails app.
 
-
-	class ApplicationController < ActionController::Base
-	  after_filter :stuff_to_do_after_action
-	end
-
-Finally, around filters are general purpose filters that can run code before **and** after the action. The use of the `yield` keyword determines exactly when the action is performed.
-
-
-	class ApplicationController < ActionController::Base
-		around_filter :stuff_before_and_after_action
-	
-		def stuff_before_and_after_action
-			stuff_before
-			yield # this is the action itself
-			stuff_after
-		end
-	end
-	
-Don't worry to much about learning this all right now, but do be aware the it exists and can really make your life easier.
+For now, just know that they exist and can make your life much easier when the time comes.
