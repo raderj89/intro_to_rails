@@ -46,7 +46,7 @@ Rather than reinvent the wheel, I'm going to outsource the rest of your learning
 
 Now that you've done that, you can proceed on to the controller section of this guide to get a little bit more context on the rest of the picture.
 
-If you are somehow still hungry for more information on this whole routes thing before you move on, I've copied the routes file from above and commented a few of the more interesting parts to whet your appetitite. This is purely extra credit, so feel free to move on now if you'd like.
+If you are somehow still hungry for more information on this whole routes thing before you move on, I've copied the routes file from above and commented a few of the more interesting parts to whet your appetite. This is purely extra credit, so feel free to move on now if you'd like.
 
 
     BrahooAnswers::Application.routes.draw do
