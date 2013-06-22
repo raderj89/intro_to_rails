@@ -1,7 +1,5 @@
 #View and Form Helpers
 
-
-
 Rails gives us access to some awesome, and super helpful, helpers to make our lives easier while we're putting together a page. These are (ordered by increasing complexity):
 
 1. image_tag

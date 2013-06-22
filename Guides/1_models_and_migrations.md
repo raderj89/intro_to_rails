@@ -1,7 +1,5 @@
 #Models and Migrations
 
-===
-
 Models and migrations are models and migrations, meaning that if you learned them in Sinatra there's nothing new in Rails. The one major difference is in generating the two automatically.
 
 Creating a model in our sinatra skeleton went like this:

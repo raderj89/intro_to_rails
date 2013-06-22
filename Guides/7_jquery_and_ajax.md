@@ -10,8 +10,8 @@ Okay, so maybe not *exactly* the same. One nice thing about Rails is that you ca
       format.html { redirect_to :back }
       format.json { render :json => {count: count} }
     end
-    
-In Sinatra, some of you may have used the `response.xhr?` call to respond differently to JavaScript requests. You still have the ability to do that, but now you can also use the `respond_to` block to control how you respond to requests for different data types. 
+
+In Sinatra, some of you may have used the `response.xhr?` call to respond differently to JavaScript requests. You still have the ability to do that, but now you can also use the `respond_to` block to control how you respond to requests for different data types.
 
 For example, say you make a `post` request from JavaScript and tell it you're expect `json` data back. It would hit this `respond_to` block, go to the `format.json` line because JavaScript wants `json` back, and return the value executed within that call, in this case a `json` object with a `count` variable in it.
 

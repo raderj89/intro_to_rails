@@ -1,6 +1,6 @@
 #Controllers
 
-Controllers are on the receiving end of the routes file that you just read about. Basically, a controller is a Ruby class that responds to requests, manipulates model(s) as necessary and tells a particular page to display. 
+Controllers are on the receiving end of the routes file that you just read about. Basically, a controller is a Ruby class that responds to requests, manipulates model(s) as necessary and tells a particular page to display.
 
 Here is what a basic controller looked like in Sinatra:
 
@@ -25,7 +25,7 @@ But in Rails, our controller now looks like this:
 	  def show
 	    @user = User.find(params[:id])
 	  end
-	  
+
 	end
 
 There's some trickery going on here. Besides the fact that the format is different (we're now using explicit method definitions to in our controller), we also don't have to call `erb :something`; Rails does this automatically! If you name your files correctly, Rails will automatically load the proper view at the end of the method, unless you override the default behavior by explicitly telling it to do something else. Sahweeet!

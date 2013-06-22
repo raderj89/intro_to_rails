@@ -7,11 +7,11 @@ If you're reading this file, you're most likely trying to learn Rails. That's gr
 
 Unfortunately, as with any new language or framework, there's a bit of a learning curve that goes along with Rails. You'll need to spend some time getting familiar with its intricacies, peculiarities, and best practices. And yes, 'some time' is an understatement.
 
-For a lot of people this can be an especially difficult process. And that's why I decided to put this guide together. 
+For a lot of people this can be an especially difficult process. And that's why I decided to put this guide together.
 
 First things first, some background:
 
-I'm a newly-learned (pronounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the on boarding process as easy and pain free as possible for those following behind us. 
+I'm a newly-learned (pronounced learn-ed) Dev Bootcamp student fresh off my first week of Rails. This guide largely draws from the work of my classmates (with the notable addition of my spelling mistakes and poor grammar) and is intended to make the on boarding process as easy and pain free as possible for those following behind us.
 
 Note: You will see many references to how things were done in Sinatra. If you're not a Dev Bootcamp student and have never heard of or used Sinatra before, feel free to glaze over those parts.
 
@@ -38,29 +38,29 @@ Speaking of important ones, let's dig into that directory a bit. Rails is very m
 `APP`
 
 * `assets`:
-	 
+
 	In Sinatra, you were probably used to putting your CSS and JavaScript files in your public folder. Now, they're stored in this assets folder (or pipeline, as you'll start to call it).
 
 * `controllers`:
-	
+
 	You'll never guess which part of the Model - View - Controller structure is stored in this directory. This houses the conductors of your application.
 
 * `helpers`:
-	
+
 	Helpers will be useful later on, but for now just know that this is the place to store your cross-app helper methods and the like (for example, `current_user`).
-	
+
 * `models`:
-	
+
 	The place where all of your models go. Duh.
-	
+
 * `views`:
-	
+
 	The last of the MVC trifecta. This is where you store nearly every page that your app will display.
 
 `DB`
 
 * `migrate`:
-	
+
 	If you're coming off of Sinatra, this should look exactly the same to you. All of your table modifications - create, update or otherwise - will take the form of migrations stored in this directory.
 
 Outside of the APP and DB directories, there are two other very important files:
@@ -68,7 +68,7 @@ Outside of the APP and DB directories, there are two other very important files:
 * `Gemfile`
 
 	Rails is awesome and automagically requires all of the files in your Gemfile. Get familiar with the gems that come pre-included, or at the very least know what they're related to. If you see `group :test` or similarly worded statements, that means the gems will just be required for that specific context (in this case, when you're conducting testing using rspec).
-	
+
 * `config/routes.rb`
 
 	The routes file will be completely new to most of you, but it's importance can't be understated. This file gives you control over how to route all sorts of requests (get '/', post '/users/new', etc.) and will be the topic of a deep dive later on in this guide.
