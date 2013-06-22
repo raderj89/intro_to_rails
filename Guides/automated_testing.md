@@ -81,4 +81,4 @@ One nice thing about rspec is that it almost reads like english. Here's the same
       end
     end
 
-And that's all the introduction I'm going to give you for now. You'll become very familiar with rspec testing soon enough, but for now just be aware that it exists and that its important is proportional to the complexity of your app.
+And that's all the introduction I'm going to give you for now. You'll become very familiar with rspec testing soon enough, but for now just be aware that it exists and that its importance is proportional to the complexity of your app.
