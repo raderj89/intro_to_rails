@@ -1,6 +1,6 @@
 #Automated Testing
 
-I purposefully left testing to the end, even though you will here the term 'test driven development' (TDD) a whole lot in the coming weeks.
+I purposefully left testing to the end, even though you will hear the term 'test driven development' (TDD) a whole lot in the coming weeks.
 
 	Test Driven Development is a software development process that is focuses on the developer writing failing tests for the functionality they wish to have in their app, then writing code that will cause the tests to pass, providing the desired functionality, and finally, refactoring the code to make it faster. -Wikipedia
 
