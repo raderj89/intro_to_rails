@@ -13,6 +13,6 @@ Okay, so maybe not *exactly* the same. One nice thing about Rails is that you ca
 
 In Sinatra, some of you may have used the `response.xhr?` call to respond differently to JavaScript requests. You still have the ability to do that, but now you can also use the `respond_to` block to control how you respond to requests for different data types.
 
-For example, say you make a `post` request from JavaScript and tell it you're expect `json` data back. It would hit this `respond_to` block, go to the `format.json` line because JavaScript wants `json` back, and return the value executed within that call, in this case a `json` object with a `count` variable in it.
+For example, say you make a `post` request from JavaScript and tell it you're expecting `json` data back. It would hit this `respond_to` block, go to the `format.json` line because JavaScript wants `json` back, and return the value executed within that call, in this case a `json` object with a `count` variable in it.
 
 Keeping with the theme of this guide, don't worry about knowing exactly how to use this in your code. For now, know that this is yet another tool that you can keep in your back pocket for when the time comes.
