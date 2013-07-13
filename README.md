@@ -81,13 +81,13 @@ If you navigate into any of these files, you'll notice that a lot of them alread
 
 Okay, so now that you are at least vaguely familiar with the layout of a Rails app, we're going to deep dive into a few topics that will help get you moving along to Rails mastery. Those topics are:
 
-1. Models and Migrations
-2. Routes
-3. Controllers
+1. [Models and Migrations](/Guides/1_models_and_migrations.md) 
+2. [Routes](/Guides/2_routes.md) 
+3. [Controllers](/Guides/3_controllers.md) 
 4. Views and Partials
-5. View and Form Helpers
-6. Automated Testing
-7. jQuery and Ajax
+5. [View and Form Helpers](/Guides/5_view_and_form_helpers.md) 
+6. [Automated Testing](/Guides/6_automated_testing.md) 
+7. [jQuery and Ajax](/Guides/7_jquery_and_ajax.md) 
 
 Each of these topics are covered in a separate markdown file. I'd recommend covering them in the order listed, but it's certainly not a requirement. By the end of this guide, you'll have a good sense of how a Rails app works and will be able to build a functioning app of your own.
 
