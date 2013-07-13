@@ -42,7 +42,7 @@ Got it? Good. Now for a bit of explanation.
 ####Routes
 Rails is really good about finding images (assuming they have unique names), so usually you don't need to append a path to the front of the image name unless you have nested folders within the asset pipeline. You saw that above when we simply passed in the image name to the ```image_tag``` helper. This will work for all images in your ```public``` directory and your ```assets/images``` directory.
 
-By default, images that are stored in the assets folder will automatically be cached for future use as well. Therefore, it's best practice to put things like header images or splash pages.
+By default, images that are stored in the assets folder will automatically be cached for future use as well. Therefore, it's best practice to put things like header images or splash pages in the assets folder.
 
 Here's an example of an ```image_tag``` that uses a subdirectory within our normal ```assets/images``` path. In this case, we used a subdirectory of ```backgrounds```:
 
