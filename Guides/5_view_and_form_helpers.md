@@ -132,7 +132,7 @@ If you were paying attention, you might have noticed the ```confirm``` attribute
 
 Ready to have your mind blown?
 
-Remeber back in the old days (Friday), when we had to type out the nitty gritty details of each form, like the action and the method and the values and placeholders (or let's be real - copy and paste them)? Well, you can kiss that maddness goodbye. One of the super helpful features of Rails is a ```form_for``` method that does a lot of the leg work for you. Let's get started…
+Remeber back in the old days (Friday), when we had to type out the nitty gritty details of each form, like the action and the method and the values and placeholders (or let's be real - copy and paste them)? Well, you can kiss that madness goodbye. One of the super helpful features of Rails is a ```form_for``` method that does a lot of the leg work for you. Let's get started…
 
 ###Example (Sinatra to Rails)
 
