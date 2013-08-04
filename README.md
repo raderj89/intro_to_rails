@@ -71,7 +71,7 @@ Outside of the APP and DB directories, there are two other very important files:
 
 * `config/routes.rb`
 
-	The routes file will be completely new to most of you, but it's importance can't be understated. This file gives you control over how to route all sorts of requests (get '/', post '/users/new', etc.) and will be the topic of a deep dive later on in this guide.
+	The routes file will be completely new to most of you, but it's importance can't be understated. This file gives you control over how to route all sorts of requests (```get '/'```, ```post '/users/new'```, etc.) and will be the topic of a deep dive later on in this guide.
 
 If you navigate into any of these files, you'll notice that a lot of them already have detailed comments describing their purpose. Skim through those! By no means do you need to understand all of them, but it can't hurt to get a general sense of what's going on.
 
