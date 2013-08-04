@@ -28,9 +28,9 @@ But in Rails, our controller now looks like this:
 
 	end
 
-There's some trickery going on here. Besides the fact that the format is different (we're now using explicit method definitions to in our controller), we also don't have to call `erb :something`; Rails does this automatically! If you name your files correctly, Rails will automatically load the proper view at the end of the method, unless you override the default behavior by explicitly telling it to do something else. Sahweeet!
+There's some trickery going on here. Besides the fact that the format is different (we're now using explicit method definitions in our controller), we also don't have to call `erb :something`; Rails does this automatically! If you name your files correctly, Rails will automatically load the proper view at the end of the method, unless you override the default behavior by explicitly telling it to do something else. Sahweeet!
 
-Another thing you'll notice is that `UsersController` inherits from `ApplicationController`. If you were taking notes while you were reviewing the skeleton Rails app, that name may seem familiar. In fact, the `ApplicationController` is already defined for you and, by convention, every other controller should inherit from that. That way, you can put useful methods in the `ApplicationController` and they'll be accessible to all of your other controller. For example:
+Another thing you'll notice is that `UsersController` inherits from `ApplicationController`. If you were taking notes while you were reviewing the skeleton Rails app, that name may seem familiar. In fact, the `ApplicationController` is already defined for you and, by convention, every other controller should inherit from that. That way, you can put useful methods in the `ApplicationController` and they'll be accessible to all of your other controllers. For example:
 
 	class ApplicationController < ActionController::Base
 		def methods_every_controller_can_use

@@ -42,7 +42,7 @@ Got it? Good. Now for a bit of explanation.
 ####Routes
 Rails is really good about finding images (assuming they have unique names), so usually you don't need to append a path to the front of the image name unless you have nested folders within the asset pipeline. You saw that above when we simply passed in the image name to the ```image_tag``` helper. This will work for all images in your ```public``` directory and your ```assets/images``` directory.
 
-By default, images that are stored in the assets folder will automatically be cached for future use as well. Therefore, it's best practice to put things like header images or splash pages.
+By default, images that are stored in the assets folder will automatically be cached for future use as well. Therefore, it's best practice to put things like header images or splash pages in the assets folder.
 
 Here's an example of an ```image_tag``` that uses a subdirectory within our normal ```assets/images``` path. In this case, we used a subdirectory of ```backgrounds```:
 
@@ -132,7 +132,7 @@ If you were paying attention, you might have noticed the ```confirm``` attribute
 
 Ready to have your mind blown?
 
-Remeber back in the old days (Friday), when we had to type out the nitty gritty details of each form, like the action and the method and the values and placeholders (or let's be real - copy and paste them)? Well, you can kiss that maddness goodbye. One of the super helpful features of Rails is a ```form_for``` method that does a lot of the leg work for you. Let's get started…
+Remeber back in the old days (Friday), when we had to type out the nitty gritty details of each form, like the action and the method and the values and placeholders (or let's be real - copy and paste them)? Well, you can kiss that madness goodbye. One of the super helpful features of Rails is a ```form_for``` method that does a lot of the leg work for you. Let's get started…
 
 ###Example (Sinatra to Rails)
 
