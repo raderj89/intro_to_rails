@@ -6,7 +6,7 @@ Rails gives us access to some awesome, and super helpful, helpers to make our li
 2. link_to
 3. form_for
 
-Let's tage a look at each of these...
+Let's take a look at each of these...
 
 ##image_tag
 
@@ -171,6 +171,8 @@ You may be asking yourself, "WTF - why is there an extra div in my form?!?" Well
 
 > Now, you’ll notice that the HTML contains something extra: a div element with two hidden input elements inside. This div is important, because the form cannot be successfully submitted without it. The first input element with name utf8 enforces browsers to properly respect your form’s character encoding and is generated for all forms whether their actions are “GET” or “POST”. The second input element with name authenticity_token is a security feature of Rails called cross-site request forgery protection, and form helpers generate it for every non-GET form (provided that this security feature is enabled). You can read more about this in the Security Guide.
 
+> [Source](http://guides.rubyonrails.org/form_helpers.html)
+
 Here's another example with a simple search box, and the `form_tag` instead of `form_for`:
 
 	<%= form_tag("/search", :method => "get") do %>
@@ -244,3 +246,5 @@ One last thing. The `form_for` takes a few optional paramters passed in thusly:
 ---
 
 And that's it for view and form helpers for now! There's a ton of other ones, so be sure to check the docs when you find yourself scratching your head.
+
+Looks like you are set on Helpers for now. Go check out [Testing](6_automated_testing.md).
