@@ -2,11 +2,13 @@
 
 I purposefully left testing to the end, even though you will hear the term 'test driven development' (TDD) a whole lot in the coming weeks.
 
-	Test Driven Development is a software development process that is focuses on the developer writing failing tests for the functionality they wish to have in their app, then writing code that will cause the tests to pass, providing the desired functionality, and finally, refactoring the code to make it faster. -Wikipedia
+> Test Driven Development is a software development process that is focuses on the developer writing failing tests for the functionality they wish to have in their app, then writing code that will cause the tests to pass, providing the desired functionality, and finally, refactoring the code to make it faster.
+	
+>  Wikipedia
 
 Basically, as apps get bigger and bigger, bugs become more and more prevalent. One of the ways to make reliable code is to generate tests that confirm its reliability. As long as you run those tests every time you make a change (and, in the case of TDD, make changes to get the tests to pass), you know that you're good to go. It's a great way to ensure quality and find bugs as soon as the appear, and can be a really powerful tool in the right hands.
 
-Unfortunately, it's also yet another language to learn and can really hinder your ability to pick up Rails if given too much weight early on. So, I this guide will serve as an introduction only; the real learning will happen once you've gained a semblance of comfort with Rails itself.
+Unfortunately, it's also yet another language to learn and can really hinder your ability to pick up Rails if given too much weight early on. So, this guide will serve as an introduction only; the real learning will happen once you've gained a semblance of comfort with Rails itself.
 
 ---
 
@@ -82,3 +84,5 @@ One nice thing about rspec is that it almost reads like english. Here's the same
     end
 
 And that's all the introduction I'm going to give you for now. You'll become very familiar with rspec testing soon enough, but for now just be aware that it exists and that its importance is proportional to the complexity of your app.
+
+You only have one more section left, so move on to learn about [jQuery & Ajax](7_jquery_and_ajax.md).
