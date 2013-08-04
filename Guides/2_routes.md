@@ -79,3 +79,5 @@ If you are somehow still hungry for more information on this whole routes thing 
       ## specificies what gets called when you visit '/'
       root :to => 'questions#index'
     end
+    
+That's it for Routes, so jump on over to the [Controllers](3_controllers.md) page.
