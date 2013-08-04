@@ -32,3 +32,5 @@ Say whaaaat?! Pretty awesome, right?
 As for the rest of the models and migrations, not much else changes. ActiveRecord is still ActiveRecord, so your model and table validations (e.g. `:uniqueness => true`) don't change.
 
 Onwards and upwards!
+
+If you are feeling good, head over to the [Routes](2_routes.md) section!
