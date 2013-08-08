@@ -235,7 +235,7 @@ Catch all of that? Good, here's one more example:
 	  <%= f.submit %>
 	<% end %>
 
-One last thing. The `form_for` takes a few optional paramters passed in thusly: 
+One last thing. The `form_for` takes a few optional parameters passed in thusly: 
 
 	form_for @post, :as => :post, :url => post_path(@post), :method => :put, :html => { :class => "edit_post", :id => "edit_post_45" }
 
