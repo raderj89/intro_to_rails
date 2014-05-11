@@ -1,4 +1,4 @@
-#An Intro to Rails 3
+#An Intro to Rails 4
 -By some newbies
 
 ===
@@ -21,7 +21,7 @@ Okay, enough with the talk. Onward!
 
 ##Setup
 
-To get started with Rails, make sure you have it installed on your computer. You can type `which rails` or `gem list` to see if it is already installed. If not, just type `gem install -v=3.2.13 rails` to download it. (If you only type 'gem install rails', you'll get Rails 4.0 since it's the latest version).
+To get started with Rails, make sure you have it installed on your computer. You can type `which rails` or `gem list` to see if it is already installed. If not, just type `gem install rails` to download it.
 
 Once you have that, navigate to a new directory of your choosing.
 
@@ -31,7 +31,7 @@ In Sinatra, you were probably given a skeleton app to use and you would have to 
 
 Or, if you have multiple versions of Rails installed:    
 
-    $ rails _3.2.13_ new name_of_app_here -T
+    $ rails _4.1.1_ new name_of_app_here -T
 
 You should see a metric ton of `create` and `Using` statements appear on the screen when you hit enter. Now, if you look at your directory you'll see a folder with your app in it. If you navigate into it, you'll a whole bunch of new and confusing files. Don't panic just yet! We'll cover the important ones soon enough.
 
@@ -43,39 +43,39 @@ Speaking of important ones, let's dig into that directory a bit. Rails is very m
 
 * `assets`:
 
-	In Sinatra, you were probably used to putting your CSS and JavaScript files in your public folder. Now, they're stored in this assets folder (or pipeline, as you'll start to call it).
+  In Sinatra, you were probably used to putting your CSS and JavaScript files in your public folder. Now, they're stored in this assets folder (or pipeline, as you'll start to call it).
 
 * `controllers`:
-
-	You'll never guess which part of the Model - View - Controller structure is stored in this directory. This houses the conductors of your application.
+  
+  This houses the controllers of your application.
 
 * `helpers`:
 
-	Helpers will be useful later on, but for now just know that this is the place to store your cross-app helper methods and the like (for example, `current_user`).
+  Helpers will be useful later on, but for now just know that this is the place to store your cross-app helper methods and the like (for example, `current_user`).
 
 * `models`:
 
-	The place where all of your models go. Duh.
+  The place where all of your models go.
 
 * `views`:
 
-	The last of the MVC trifecta. This is where you store nearly every page that your app will display.
+  The last of the MVC trifecta. This is where you store nearly every page that your app will display.
 
 `DB`
 
 * `migrate`:
 
-	If you're coming off of Sinatra, this should look exactly the same to you. All of your table modifications - create, update or otherwise - will take the form of migrations stored in this directory.
+  If you're coming off of Sinatra, this should look exactly the same to you. All of your table modifications - create, update or otherwise - will take the form of migrations stored in this directory.
 
 Outside of the APP and DB directories, there are two other very important files:
 
 * `Gemfile`
 
-	Rails is awesome and automagically requires all of the files in your Gemfile. Get familiar with the gems that come pre-included, or at the very least know what they're related to. If you see `group :test` or similarly worded statements, that means the gems will just be required for that specific context (in this case, when you're conducting testing using rspec).
+  Rails is awesome and automagically requires all of the files in your Gemfile. Get familiar with the gems that come pre-included, or at the very least know what they're related to. If you see `group :test` or similarly worded statements, that means the gems will just be required for that specific context (in this case, when you're conducting testing using rspec).
 
 * `config/routes.rb`
 
-	The routes file will be completely new to most of you, but it's importance can't be understated. This file gives you control over how to route all sorts of requests (```get '/'```, ```post '/users/new'```, etc.) and will be the topic of a deep dive later on in this guide.
+  The routes file will be completely new to most of you, but it's importance can't be understated. This file gives you control over how to route all sorts of requests (```get '/'```, ```post '/users/new'```, etc.) and will be the topic of a deep dive later on in this guide.
 
 If you navigate into any of these files, you'll notice that a lot of them already have detailed comments describing their purpose. Skim through those! By no means do you need to understand all of them, but it can't hurt to get a general sense of what's going on.
 
